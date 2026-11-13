@@ -29,7 +29,7 @@ class MainActivity : FragmentActivity() {
                 var locked by remember { mutableStateOf(true) }
                 var screen by remember { mutableStateOf<Screen>(Screen.Home) }
                 var version by remember { mutableIntStateOf(0) }
-                val changed = { version++ }
+                val changed: () -> Unit = { version++; Unit }
                 // Kunci otomatis saat aplikasi ditutup / ke background
                 var stopAt by remember { mutableLongStateOf(0L) }
                 val owner = LocalLifecycleOwner.current
