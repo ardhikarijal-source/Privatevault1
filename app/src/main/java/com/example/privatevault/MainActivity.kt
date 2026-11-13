@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.*
-import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.privatevault.data.*
 import com.example.privatevault.ui.*
 import java.io.File
